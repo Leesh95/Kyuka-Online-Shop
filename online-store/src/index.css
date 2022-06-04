@@ -1,0 +1,15 @@
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+header {
+  background-color: #f2eeeb;
+  padding: 1rem;
+}
+
+header a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 45px;
+  text-decoration: none;
+}

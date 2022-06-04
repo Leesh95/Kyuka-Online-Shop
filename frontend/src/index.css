@@ -1,0 +1,39 @@
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+header {
+  background-color: #f2eeeb;
+  padding: 1rem;
+}
+
+header a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 45px;
+  text-decoration: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+.product {
+  border: 1px #e4d4c8 solid;
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info {
+  padding: 1rem;
+}

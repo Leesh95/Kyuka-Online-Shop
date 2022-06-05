@@ -1,7 +1,6 @@
 const data = {
   products: [
     {
-      _id: '1',
       name: 'Glowy Makeup Serum',
       slug: 'Glowy-Makeup-Serum',
       category: 'serums',
@@ -14,7 +13,6 @@ const data = {
         'A lightweight, hydrating serum that keeps oil in check for visibly smoother skin and longer-lasting makeup wear.',
     },
     {
-      _id: '2',
       name: 'Hyaluronic Serum',
       slug: 'Hyaluronic-Serum',
       category: 'serums',
@@ -27,7 +25,6 @@ const data = {
         'A juicy serum that intensely hydrates for a smooth, supple complexion and is hypoallergenic, dermatologist-tested, and suitable for sensitive skin.',
     },
     {
-      _id: '3',
       name: 'Green Tea Serum',
       slug: 'Green-Tea-Serum',
       category: 'serums',
@@ -40,7 +37,6 @@ const data = {
         'A lightweight serum infused with hyaluronic acid and Green Tea to quickly hydrate and support the moisture barrier.',
     },
     {
-      _id: '4',
       name: 'Rose Sleeping Mask',
       slug: 'Rose-Sleeping-Mask',
       category: 'masks',
@@ -53,7 +49,6 @@ const data = {
         'A two-step mask that delivers continuous hydration overnight, drenching skin with moisture and then locking it in for a supple, dewy look.',
     },
     {
-      _id: '5',
       name: 'Overnight Mask',
       slug: 'Overnight-Mask',
       category: 'masks',
@@ -66,7 +61,6 @@ const data = {
         'An overnight face mask that is clinically proven to calm signs of sensitivity—redness, uneven tone, and rough texture—for a visibly even-toned complexion.',
     },
     {
-      _id: '6',
       name: 'Clay Mask',
       slug: 'Clay-Mask',
       category: 'masks',

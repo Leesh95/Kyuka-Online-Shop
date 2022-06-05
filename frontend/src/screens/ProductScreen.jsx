@@ -1,5 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useReducer } from 'react';
+import { useContext, useEffect, useReducer } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,6 +13,8 @@ import '../index.css';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { getError } from '../utils';
+import { Store } from './Store';
+import '../index.css';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -26,9 +29,10 @@ const reducer = (state, action) => {
   }
 };
 
-const ProductScreen = () => {
+function ProductScreen() {
   const params = useParams();
   const { slug } = params;
+
   const [{ loading, error, product }, dispatch] = useReducer(reducer, {
     product: [],
     loading: true,
@@ -46,6 +50,22 @@ const ProductScreen = () => {
     };
     fetchData();
   }, [slug]);
+
+  const { state, dispatch: ctxDispatch } = useContext(Store);
+  const { cart } = state;
+  const addToCartHandler = async () => {
+    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+    const { data } = await axios.get(`/api/products/${product._id}`);
+    if (data.countInStock < quantity) {
+      window.alert('Sorry. Product is out of stock');
+      return;
+    }
+    ctxDispatch({
+      type: 'CART_ADD_ITEM',
+      payload: { ...product, quantity },
+    });
+  };
   return loading ? (
     <LoadingBox />
   ) : error ? (
@@ -74,7 +94,7 @@ const ProductScreen = () => {
                 numReviews={product.numReviews}
               ></Rating>
             </ListGroup.Item>
-            <ListGroup.Item> Price : ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Pirce : ${product.price}</ListGroup.Item>
             <ListGroup.Item>
               Description:
               <p>{product.description}</p>
@@ -87,22 +107,23 @@ const ProductScreen = () => {
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Row>
-                    <Col>Price: </Col>
-                    <Col>${product.price} </Col>
+                    <Col>Price:</Col>
+                    <Col>${product.price}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Row>
-                    <Col>Status: </Col>
+                    <Col>Status:</Col>
                     <Col>
                       {product.countInStock > 0 ? (
                         <Badge bg="success">In Stock</Badge>
                       ) : (
-                        <Badge bg="danger">Out Of Stock</Badge>
-                      )}{' '}
+                        <Badge bg="danger">Unavailable</Badge>
+                      )}
                     </Col>
                   </Row>
                 </ListGroup.Item>
+
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
@@ -117,5 +138,5 @@ const ProductScreen = () => {
       </Row>
     </div>
   );
-};
+}
 export default ProductScreen;

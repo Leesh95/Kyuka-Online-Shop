@@ -8,7 +8,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <header>
-          <Link to="/">Kyuka</Link>
+          <Link to="/">Kyūka</Link>
         </header>
         <main>
           <Routes>

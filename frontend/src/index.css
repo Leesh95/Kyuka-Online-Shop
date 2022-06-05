@@ -3,8 +3,10 @@ body {
 }
 
 header {
+  height: 20;
   background-color: #f2eeeb;
   padding: 1rem;
+  text-align: center;
 }
 
 header a {

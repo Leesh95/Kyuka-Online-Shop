@@ -10,6 +10,7 @@ import { useContext } from 'react';
 import React from 'react';
 import Footer from './components/Footer';
 import { Store } from './screens/Store';
+import { CartScreen } from './screens/CartScreen';
 
 const App = () => {
   const { state } = useContext(Store);
@@ -40,6 +41,7 @@ const App = () => {
           <Container className="mt-3">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
+              <Route path="/cart" element={<CartScreen />} />
               <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>

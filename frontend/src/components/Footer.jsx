@@ -71,13 +71,14 @@ const Footer = () => {
 const Contaniner = styled.div`
   display: flex;
   background-color: #f2eeeb;
+  padding: 20px;
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 35px;
+  padding-left: 25px;
 `;
 
 const Logo = styled.h1`

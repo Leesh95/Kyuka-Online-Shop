@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 import React from 'react';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -27,9 +28,7 @@ const App = () => {
             </Routes>
           </Container>
         </main>
-        <footer>
-          <div className="text-center">All rights reserved</div>
-        </footer>
+        <Footer />
       </div>
     </BrowserRouter>
   );

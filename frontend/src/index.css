@@ -75,6 +75,18 @@ btn-primary[disabled] {
   color: #aa5678;
 }
 
-.fc {
-  color: rgb(38, 28, 28);
+.logo {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.navbg {
+  background-color: #f2eeeb;
+}
+
+a {
+  color: rgb(64, 40, 40);
+}
+.me-auto {
+  font-size: 20px;
 }

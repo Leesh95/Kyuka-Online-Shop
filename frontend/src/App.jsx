@@ -15,6 +15,7 @@ import { Store } from './screens/Store';
 import CartScreen from './screens/CartScreen';
 import SigninScreen from './screens/SigninScreen';
 import ShippingAddressScreen from './screens/ShippingAddressScreen';
+import MessagesBar from './components/MessagesBar';
 
 const App = () => {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -27,13 +28,14 @@ const App = () => {
   };
   return (
     <BrowserRouter>
+      <MessagesBar />
       <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark">
+          <Navbar className="navbg">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Kyuka</Navbar.Brand>
+                <Navbar.Brand className="logo">Kyūka</Navbar.Brand>
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">

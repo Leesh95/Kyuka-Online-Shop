@@ -46,7 +46,7 @@ const HomeScreen = () => {
   }, []);
   return (
     <div>
-      <h1>Featured Products</h1>
+      <h3>START YOUR SKIN CARE JOURNEY HERE</h3>
       <div className="products">
         {loading ? (
           <LoadingBox />

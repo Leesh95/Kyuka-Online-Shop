@@ -1,20 +1,20 @@
-import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import Navbar from 'react-bootstrap/Navbar';
+import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useContext } from 'react';
-import Footer from './components/Footer';
 import { Store } from './screens/Store';
-import { CartScreen } from './screens/CartScreen';
-import { SigninScreen } from './screens/SigninScreen';
+import CartScreen from './screens/CartScreen';
+import SigninScreen from './screens/SigninScreen';
+import ShippingAddressScreen from './screens/ShippingAddressScreen';
 
 const App = () => {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -23,6 +23,7 @@ const App = () => {
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   };
   return (
     <BrowserRouter>
@@ -32,7 +33,7 @@ const App = () => {
           <Navbar bg="dark" variant="dark">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Kyūka</Navbar.Brand>
+                <Navbar.Brand>Kyuka</Navbar.Brand>
               </LinkContainer>
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
@@ -75,11 +76,15 @@ const App = () => {
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SigninScreen />} />
+              <Route path="/shipping" element={<ShippingAddressScreen />} />
+
               <Route path="/" element={<HomeScreen />} />
             </Routes>
           </Container>
         </main>
-        <Footer />
+        <footer>
+          <div className="text-center">All rights reserved</div>
+        </footer>
       </div>
     </BrowserRouter>
   );

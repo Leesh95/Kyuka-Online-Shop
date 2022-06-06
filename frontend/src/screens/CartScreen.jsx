@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-export const CartScreen = () => {
+const CartScreen = () => {
   const navigate = useNavigate();
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const {
@@ -129,3 +129,5 @@ export const CartScreen = () => {
     </div>
   );
 };
+
+export default CartScreen;

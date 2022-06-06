@@ -1,10 +1,38 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 .site-container {
   min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.btn-primary {
+  background-color: #f2eeeb;
+  color: #000000;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a59d8e;
+  color: #000000;
+  border: none;
+}
+
+.btn-primary:disabled,
+btn-primary[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.msbx {
+  background-color: #000000;
 }
 
 .products {
@@ -13,69 +41,40 @@ body {
   justify-content: center;
 }
 
-main {
-  flex: 1;
-}
-
 .rating span {
   color: #ffc000;
 }
 
-.button-1 {
-  background-color: #f2eeeb;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-1:hover,
-.button-1:focus {
-  background-color: #a59d8e;
-}
-
 .product {
-  border: 1px #e4d4c8 solid;
+  border: 1px #404040 solid;
   margin: 1rem;
 }
-
 .product img {
   width: 100%;
   max-width: 400px;
 }
-
 .product-info {
   padding: 1rem;
 }
-
 .img-large {
   max-width: 100%;
 }
-
 .img-thumbnail {
   height: 80px;
 }
-
 .small-container {
   max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #e0cad3;
+  color: #e0cad3;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #aa5678;
+  color: #aa5678;
+}
+
+.fc {
+  color: rgb(38, 28, 28);
 }

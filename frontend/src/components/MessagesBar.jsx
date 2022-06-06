@@ -5,7 +5,7 @@ const MessagesBar = () => {
   return (
     <Container>
       <Wrapper>
-        <Message>FREE SHIPPING ON ORDERS OVER 50$</Message>
+        <Message>FREE SHIPPING ON ORDERS OVER 100$</Message>
       </Wrapper>
     </Container>
   );

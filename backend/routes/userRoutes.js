@@ -17,7 +17,6 @@ userRouter.post(
           name: user.name,
           email: user.email,
           isAdmin: user.isAdmin,
-          //token - can be used for creating authenticated request to update user info, placing orders exc.
           token: generateToken(user),
         });
         return;

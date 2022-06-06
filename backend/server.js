@@ -26,7 +26,6 @@ app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 
-//if there is an error - this will run and the error message will return to the user
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });

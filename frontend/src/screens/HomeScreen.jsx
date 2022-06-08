@@ -7,6 +7,7 @@ import Product from '../components/Product';
 import React from 'react';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
+import Slideshow from '../components/Slideshow';
 
 // import data from '../data';
 
@@ -46,7 +47,25 @@ const HomeScreen = () => {
   }, []);
   return (
     <div>
-      <h3>START YOUR SKIN CARE JOURNEY HERE</h3>
+      <div className="slide-div">
+        <Slideshow />
+      </div>
+      <table className="table table-bordered">
+        <thead>
+          <tr>
+            <th>
+              <h3>START YOUR SKIN CARE JOURNEY HERE</h3>
+            </th>
+          </tr>
+          <tr>
+            <h5>
+              Skin care is a personal journey and we're here to guide you along
+              the way.
+            </h5>
+          </tr>
+        </thead>
+      </table>
+
       <div className="products">
         {loading ? (
           <LoadingBox />

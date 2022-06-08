@@ -159,3 +159,28 @@ a {
   padding-left: 20px;
   margin-top: -20px;
 }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  height: 600px;
+  width: 1100px;
+}
+
+.slide-div {
+  margin-bottom: 25px;
+}
+
+.slide-container {
+  margin: 0px auto;
+  width: 1100px;
+  height: 600px;
+  text-align: center;
+}
+
+.header-home {
+  padding-top: 35px;
+  padding-left: 35px;
+}

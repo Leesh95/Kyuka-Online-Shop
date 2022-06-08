@@ -154,4 +154,8 @@ a {
 
 .col-filter {
   color: #402828;
+  background-color: #f2eeeb;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: -20px;
 }

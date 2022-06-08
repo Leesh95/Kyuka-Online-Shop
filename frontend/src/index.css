@@ -12,7 +12,8 @@ body {
 main {
   flex: 1;
 }
-.btn-primary {
+.btn-primary,
+.btn-outline-primary {
   background-color: #f2eeeb;
   color: #000000;
   border: none;
@@ -78,6 +79,8 @@ btn-primary[disabled] {
 .logo {
   font-weight: bold;
   font-size: 45px;
+  padding-left: 40px;
+  padding-right: 25px;
 }
 
 .navbg {
@@ -85,8 +88,70 @@ btn-primary[disabled] {
 }
 
 a {
-  color: rgb(64, 40, 40);
+  color: #402828;
 }
 .me-auto {
   font-size: 20px;
+}
+
+/* sidebar */
+.bt-category {
+  background-color: #5e5e4b;
+  color: white;
+  border: none !important;
+}
+
+.bt-category:focus,
+.bt-category:hover {
+  background-color: #a8a88c;
+  color: rgb(38, 38, 38);
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #97967e;
+  transition: 0.5s;
+}
+
+.side-header {
+  font-size: 35px;
+}
+.side-category {
+  color: rgb(235, 224, 224);
+  font-size: 20px;
+}
+.side-category:hover {
+  color: #49483e;
+  background-color: #abaa99;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
+}
+
+.bt-search:hover {
+  background-color: #abaa99;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.col-filter {
+  color: #402828;
 }

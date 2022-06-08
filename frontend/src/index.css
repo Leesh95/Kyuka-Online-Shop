@@ -79,7 +79,7 @@ btn-primary[disabled] {
 .logo {
   font-weight: bold;
   font-size: 45px;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-right: 25px;
 }
 
@@ -154,7 +154,7 @@ a {
 
 .col-filter {
   color: #402828;
-  background-color: #f2eeeb;
+  background-color: #f2eeeb55;
   padding-top: 20px;
   padding-left: 20px;
   margin-top: -20px;
@@ -183,4 +183,9 @@ a {
 .header-home {
   padding-top: 35px;
   padding-left: 35px;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: auto;
 }

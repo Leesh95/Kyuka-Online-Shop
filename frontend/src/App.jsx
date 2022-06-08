@@ -35,6 +35,7 @@ import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
+import Footer from './components/Footer';
 
 const App = () => {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -168,6 +169,7 @@ const App = () => {
             ))}
           </Nav>
         </div>
+
         <main>
           <Container className="mt-3">
             <Routes>
@@ -259,10 +261,7 @@ const App = () => {
             </Routes>
           </Container>
         </main>
-
-        <footer>
-          <div className="text-center">All rights reserved</div>
-        </footer>
+        <Footer className="footer" />
       </div>
     </BrowserRouter>
   );

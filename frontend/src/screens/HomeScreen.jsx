@@ -9,8 +9,6 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Slideshow from '../components/Slideshow';
 
-// import data from '../data';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':

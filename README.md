@@ -29,10 +29,11 @@
 
 ### Purchase Features
 
-| Feature       |  Coded?  | Description                                  |
-| ------------- | :------: | :------------------------------------------- |
-| See Cart      | &#10004; | Ability to see the Cart and it items         |
-| Add Item      | &#10004; | Ability of add a new Item on the Cart        |
-| Remove a Item | &#10004; | Ability of Remove a Item from the Cart       |
-| Checkout      | &#10004; | Ability to Checkout                          |
-| Payment       | &#10004; | Ability to Pay with PayPal Developer Sandbox |
+| Feature        |  Coded?  | Description                                  |
+| -------------- | :------: | :------------------------------------------- |
+| See Cart       | &#10004; | Ability to see the Cart and it items         |
+| Add Item       | &#10004; | Ability of add a new Item on the Cart        |
+| Remove a Item  | &#10004; | Ability of Remove a Item from the Cart       |
+| Search an Item | &#10004; | Ability of search an Item and filter results |
+| Checkout       | &#10004; | Ability to Checkout                          |
+| Payment        | &#10004; | Ability to Pay with PayPal Developer Sandbox |

@@ -1,4 +1,4 @@
-### Ecommerce Website [React & Node & MongoDB] API for Purchases and Products
+### :shopping_cart: Ecommerce Website [React & Node & MongoDB] API for Purchases and Products
 
 # eCommerce
 

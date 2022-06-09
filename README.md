@@ -21,9 +21,9 @@
 | Feature          |  Coded?  | Description                             |
 | ---------------- | :------: | :-------------------------------------- |
 | Dashboard        | &#10004; | Ability of Review Sales Statistics      |
-| Create a Product | &#10004; | Ability of Add a Product on the System  |
-| Edit a Product   | &#10004; | Ability of Edit a Product               |
-| Delete a Product | &#10004; | Ability of Delete a Product             |
+| Create a Product | &#10004; | Ability of Add a Product on DB          |
+| Edit a Product   | &#10004; | Ability of Edit a Product from DB       |
+| Delete a Product | &#10004; | Ability of Delete a Product from DB     |
 | Delete an Order  | &#10004; | Ability of Delete an Order              |
 | Delivery         | &#10004; | Ability of Edit an Order as "Delivered" |
 

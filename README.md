@@ -31,7 +31,6 @@
 
 | Feature       |  Coded?  | Description                                  |
 | ------------- | :------: | :------------------------------------------- |
-| Create a Cart | &#10004; | Ability of Create a new Cart                 |
 | See Cart      | &#10004; | Ability to see the Cart and it items         |
 | Add Item      | &#10004; | Ability of add a new Item on the Cart        |
 | Remove a Item | &#10004; | Ability of Remove a Item from the Cart       |

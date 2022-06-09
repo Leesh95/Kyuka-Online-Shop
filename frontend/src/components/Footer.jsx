@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 import {
   Facebook,
   Instagram,
@@ -13,93 +14,107 @@ import styled from 'styled-components';
 
 const Footer = () => (
   <Contaniner>
-    <Left>
-      <Logo>Kyūka</Logo>
-      <LinksDes>FIND US ON:</LinksDes>
-      <SocialContainer>
-        <SocialIcon color="3B5999">
-          <Facebook />
-        </SocialIcon>
-        <SocialIcon color="E4405F">
-          <Instagram />
-        </SocialIcon>
-        <SocialIcon color="1DA1F2">
-          <Twitter />
-        </SocialIcon>
-        <SocialIcon color="FF0000">
-          <YouTube />
-        </SocialIcon>
-        <SocialIcon color="E60023">
-          <Pinterest />
-        </SocialIcon>
-      </SocialContainer>
-      <LinksDes> © 2022 Lee Or Shmuel. All rights reserved</LinksDes>
-    </Left>
-    <Center>
-      <Title>Links:</Title>
-      <List>
-        <ListItem>
-          <a href="/">Home</a>
-        </ListItem>
-        <ListItem>
-          <a href="/cart">Cart</a>
-        </ListItem>
-        <ListItem>
-          <a href="/profile">Profile</a>
-        </ListItem>
-        <ListItem>
-          <a href="/search">Search</a>
-        </ListItem>
-        <ListItem>
-          <a href="/search?category=all&query=all&price=all&rating=4&order=newest&page=1">
-            Top Reviewed
-          </a>
-        </ListItem>
-        <ListItem>
-          <a href="/orderhistory">Order History</a>
-        </ListItem>
-      </List>
-    </Center>
-    <Right>
-      <Title>Contact us:</Title>
-      <ContactItem>
-        <Room style={{ marginRight: '10px' }} />
-        62 Example st. tower B floor 2 Tel Aviv 67897
-      </ContactItem>
-      <ContactItem>
-        <Phone style={{ marginRight: '10px' }} />
-        Phone: +972-12-3456789
-      </ContactItem>
-      <ContactItem>
-        <Mail style={{ marginRight: '10px' }} />
-        Email: contact@kyuka.co.il
-      </ContactItem>
-    </Right>
+    <Card className="card-footer">
+      <Left>
+        <Logo>Kyūka</Logo>
+        <LinksDes>FIND US ON:</LinksDes>
+        <SocialContainer>
+          <SocialIcon color="3B5999">
+            <Facebook />
+          </SocialIcon>
+          <SocialIcon color="E4405F">
+            <Instagram />
+          </SocialIcon>
+          <SocialIcon color="1DA1F2">
+            <Twitter />
+          </SocialIcon>
+          <SocialIcon color="FF0000">
+            <YouTube />
+          </SocialIcon>
+          <SocialIcon color="E60023">
+            <Pinterest />
+          </SocialIcon>
+        </SocialContainer>
+        <LinksDes> © 2022 Lee Or Shmuel. All rights reserved</LinksDes>
+      </Left>
+    </Card>
+    <Card className="card-footer">
+      <Center>
+        <Title>Links:</Title>
+        <List>
+          <ListItem>
+            <a href="/">Home</a>
+          </ListItem>
+          <ListItem>
+            <a href="/cart">Cart</a>
+          </ListItem>
+          <ListItem>
+            <a href="/profile">Profile</a>
+          </ListItem>
+          <ListItem>
+            <a href="/search">Search</a>
+          </ListItem>
+          <ListItem>
+            <a href="/search?category=all&query=all&price=all&rating=4&order=newest&page=1">
+              Top Reviewed
+            </a>
+          </ListItem>
+          <ListItem>
+            <a href="/orderhistory">Order History</a>
+          </ListItem>
+        </List>
+      </Center>
+    </Card>
+
+    <Card className="card-footer">
+      <Right>
+        <Title>Contact us:</Title>
+        <ContactItem>
+          <Room style={{ marginRight: '10px' }} />
+          62 Example st. tower B floor 2 Tel Aviv 67897
+        </ContactItem>
+        <ContactItem>
+          <Phone style={{ marginRight: '10px' }} />
+          Phone: +972-12-3456789
+        </ContactItem>
+        <ContactItem>
+          <Mail style={{ marginRight: '10px' }} />
+          Email: contact@kyuka.co.il
+        </ContactItem>
+      </Right>
+    </Card>
   </Contaniner>
 );
+
 const Contaniner = styled.div`
   padding-top: 30px;
   display: flex;
   background-color: #f2eeeb;
   font-family: urbanist;
+  justify-content: space-evenly;
+  align-content: stretch;
+  @media (max-width: 800px) {
+     {
+      flex-direction: column;
+    }
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 35px;
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
   font-size: 45px;
-  padding-right: 25px;
 `;
 
 const LinksDes = styled.h4`
   font-family: urbanist;
   font-size: 18px;
+  padding-top: 15px;
 `;
 
 const SocialContainer = styled.div`
@@ -121,7 +136,6 @@ const SocialIcon = styled.div`
 
 const Center = styled.div`
   flex: 1;
-  padding: 20px;
 `;
 
 const Title = styled.h3`
@@ -147,7 +161,6 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
-  padding: 20px;
 `;
 
 const ContactItem = styled.div`

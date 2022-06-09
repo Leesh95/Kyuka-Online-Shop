@@ -55,14 +55,12 @@ const HomeScreen = () => {
               <h3>START YOUR SKIN CARE JOURNEY HERE</h3>
             </th>
           </tr>
-          <tr>
-            <h5>
-              Skin care is a personal journey and we're here to guide you along
-              the way.
-            </h5>
-          </tr>
         </thead>
       </table>
+      <h5>
+        Skin care is a personal journey and we're here to guide you along the
+        way.
+      </h5>
 
       <div className="products">
         {loading ? (

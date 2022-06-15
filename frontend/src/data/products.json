@@ -1,0 +1,363 @@
+[{
+  "_id": {
+    "$oid": "629da7981326d5716749c74e"
+  },
+  "name": "Glowy Makeup Serum",
+  "slug": "Glowy-Makeup-Serum",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654693225/z3k3tl99g4qqbhz52dgs.jpg",
+  "category": "Serums",
+  "description": "A lightweight, hydrating serum that keeps oil in check for visibly smoother skin and longer-lasting makeup wear.",
+  "price": 34,
+  "countInStock": 10,
+  "rating": 4,
+  "numReviews": 10,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654693229651"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c74f"
+  },
+  "name": "Hyaluronic Serum",
+  "slug": "Hyaluronic-Serum",
+  "image": "/images/P2.jpg",
+  "category": "Serums",
+  "description": "A juicy serum that intensely hydrates for a smooth, supple complexion and is hypoallergenic, dermatologist-tested, and suitable for sensitive skin.",
+  "price": 42,
+  "countInStock": 15,
+  "rating": 4.5,
+  "numReviews": 14,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c750"
+  },
+  "name": "Green Tea Serum",
+  "slug": "Green-Tea-Serum",
+  "image": "/images/P3.jpg",
+  "category": "Serums",
+  "description": "A lightweight serum infused with hyaluronic acid and Green Tea to quickly hydrate and support the moisture barrier.",
+  "price": 42,
+  "countInStock": 0,
+  "rating": 5,
+  "numReviews": 18,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c751"
+  },
+  "name": "Rose Sleeping Mask",
+  "slug": "Rose-Sleeping-Mask",
+  "image": "/images/P4.jpg",
+  "category": "Masks",
+  "description": "A two-step mask that delivers continuous hydration overnight, drenching skin with moisture and then locking it in for a supple, dewy look.",
+  "price": 50,
+  "countInStock": 8,
+  "rating": 5,
+  "numReviews": 10,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c752"
+  },
+  "name": "Overnight Mask",
+  "slug": "Overnight-Mask",
+  "image": "/images/P5.jpg",
+  "category": "Masks",
+  "description": "An overnight face mask that is clinically proven to calm signs of sensitivity—redness, uneven tone, and rough texture—for a visibly even-toned complexion.",
+  "price": 50,
+  "countInStock": 5,
+  "rating": 4.5,
+  "numReviews": 9,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224138"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224138"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c753"
+  },
+  "name": "Clay Mask",
+  "slug": "Clay-Mask",
+  "image": "/images/P6.jpg",
+  "category": "Masks",
+  "description": "A deep-cleansing creamy clay mask—formulated with absorbent Jeju Super Volcanic Clusters™ and AHA—that helps clear pores while it exfoliates.",
+  "price": 50,
+  "countInStock": 0,
+  "rating": 5,
+  "numReviews": 12,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224138"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224138"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629e333376c52644d28c074a"
+  },
+  "name": "Oil Serum",
+  "slug": "Oil-Serum",
+  "category": "Serums",
+  "image": "/images/P7.jpg",
+  "price": 25,
+  "countInStock": 20,
+  "rating": 3,
+  "numReviews": 5,
+  "description": "A three-in-one, nutrient-rich serum, moisturizer, and primer that can be worn alone or under makeup for intense hydration, long wear, and a healthy-looking glow"
+},{
+  "_id": {
+    "$oid": "629e353b76c52644d28c074c"
+  },
+  "name": "Rose Hand Cream",
+  "slug": "Rose-Hand-Cream",
+  "image": "/images/P8.jpg",
+  "category": "Hand Creams",
+  "description": "A collection of luxurious hand creams to help nourish and protect hands.",
+  "price": 40,
+  "countInStock": 10,
+  "rating": 4,
+  "numReviews": 10
+},{
+  "_id": {
+    "$oid": "629fc34376c52644d28c0756"
+  },
+  "name": "Shea Butter Body Cream",
+  "slug": "Shea-Butter-Body-Cream",
+  "image": "/images/P10.jpg",
+  "category": "Body Creams",
+  "description": "An ultra-rich body cream enriched with 25 percent shea butter to help intensely nourish skin and moisturize for up to 72 hours.",
+  "price": 54,
+  "countInStock": 13,
+  "rating": 45,
+  "numReviews": 6,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629fc3ce76c52644d28c0757"
+  },
+  "name": "Rich Body Cream",
+  "slug": "Rich-Body-Cream",
+  "image": "/images/P11.jpg",
+  "category": "Body Creams",
+  "description": "An all-day body hydrator containing a combination of shea and mango butters to nurture and soothe skin.",
+  "price": 54,
+  "countInStock": 16,
+  "rating": 3,
+  "numReviews": 3,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629fc4c076c52644d28c0758"
+  },
+  "name": " Argan Oil Butter",
+  "slug": " Argan-Oil-Butter",
+  "image": "/images/P12.jpg",
+  "category": "Body Creams",
+  "description": "A decadent, oil-powered body butter bursting with nutrient-rich fatty acids and antioxidants to soften, smooth, and visibly firm the skin from head to toe.",
+  "price": 60,
+  "countInStock": 20,
+  "rating": 5,
+  "numReviews": 7,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224137"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62a09f2657b91f56bf5b4883"
+  },
+  "name": "Nourishing Hair Mask",
+  "slug": "Nourishing-Hair-Mask",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654693691/wk4kanaemyrvk6zaifvk.jpg",
+  "category": "Hair Masks",
+  "description": "An ultra-rich, hydrating hair mask that is packed with vitamins and nutrients to moisturize, soften, and smooth.",
+  "price": 30,
+  "countInStock": 21,
+  "rating": 0,
+  "numReviews": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654693670018"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654693711158"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a09fdc57b91f56bf5b48a9"
+  },
+  "name": "Green Tea Toner",
+  "slug": "Green-Tea-Toner",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654693878/svgapiy0j92egczffygr.jpg",
+  "category": "Toners",
+  "description": "A jasmine water facial toner infused with green tea, willow bark, and witch hazel to balance, clarify, and hydrate combination, oily, and blemish prone complexions.",
+  "price": 25,
+  "countInStock": 4,
+  "rating": 0,
+  "numReviews": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654693852599"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654693896707"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0a1aa57b91f56bf5b48c1"
+  },
+  "name": "Brightening Toner",
+  "slug": "Brightening-Toner",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654694363/z14tvyeucyjh31ok3dkk.jpg",
+  "category": "Toners",
+  "description": " A revitalizing, antioxidant-rich toner designed to replenish, hydrate, condition, and visibly even the skin‘s texture and tone.",
+  "price": 38,
+  "countInStock": 15,
+  "rating": 0,
+  "numReviews": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654694314090"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654694367367"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0a31b57b91f56bf5b48cb"
+  },
+  "name": "Moisturizing Body Cream",
+  "slug": "Moisturizing-Body-Cream",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654694706/e8iaylbafvudyo1j6xcx.jpg",
+  "category": "Body Creams",
+  "description": " Body lotions delicately scented with a choice of five different, irresistible scents that leave skin feeling soft and hydrated all day long.",
+  "price": 25,
+  "countInStock": 14,
+  "rating": 0,
+  "numReviews": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654694683257"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654694733686"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a0b0bf55a542cf5e54b4f4"
+  },
+  "name": "Olive Oil Hand Cream",
+  "slug": "Olive-Oil-Hand-Cream",
+  "image": "https://res.cloudinary.com/kyuka/image/upload/v1654698370/rxq2yswrv9hvrj5udtzh.jpg",
+  "category": "Hand Creams",
+  "description": "A thick, creamy balm that moisturizes, hydrates, and softens hands with coconut oil and shea and murumuru butters for no greasy feel.",
+  "price": 28,
+  "countInStock": 3,
+  "rating": 0,
+  "numReviews": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654698175652"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654698374567"
+    }
+  },
+  "__v": 0
+}]

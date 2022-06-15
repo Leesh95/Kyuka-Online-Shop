@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "629da7981326d5716749c756"
+  },
+  "name": "Lee",
+  "email": "LeeAdmin@example.com",
+  "password": "$2a$10$XAPtaZ9u.OvRVOF4Os0uJO/G5e89OE/GFGr87pkQ2IqoUl0vstVUS",
+  "isAdmin": true,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224146"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654499224146"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "629da7981326d5716749c757"
+  },
+  "name": "Michael K",
+  "email": "Michael@example.com",
+  "password": "$2a$10$JENXboKWisGLblics/vdJOPahNC5PbSCmzsGkPXZMvIxGnIPpqwJu",
+  "isAdmin": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654499224147"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654720895953"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62a10ae0a56b75c6da2be739"
+  },
+  "name": "Taylor",
+  "email": "Taylor@example.com",
+  "password": "$2a$10$dG0DyyD46aOBFB2Geu8E0.P.7jMOS4q13yYl0A7J9uQ2bOkA4IDUi",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654721248358"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654721248358"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62a1a0dd9ce1b7d4c3acaa64"
+  },
+  "name": "John Smith",
+  "email": "JS@bestmail.com",
+  "password": "$2a$10$nZPm5Nwi0eWMH9Ikh7C3Q.H2zTAqqiBoz3BmMxr26EqZOmLmg6OAu",
+  "isAdmin": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1654759645983"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1654759645983"
+    }
+  },
+  "__v": 0
+}]

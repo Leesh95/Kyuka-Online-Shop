@@ -21,7 +21,7 @@ const data = {
       name: 'Glowy Makeup Serum',
       slug: 'Glowy-Makeup-Serum',
       category: 'serums',
-      image: '/images/P1.jpg',
+      serumsserums: '/images/P1.jpg',
       price: 34,
       countInStock: 10,
       rating: 4,

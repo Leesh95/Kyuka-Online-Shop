@@ -8,7 +8,7 @@ import axios from 'axios';
 import { useContext } from 'react';
 import { Store } from '../screens/Store';
 
-const Product = (props) => {
+function Product(props) {
   const { product } = props;
 
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -37,7 +37,7 @@ const Product = (props) => {
       </Link>
       <Card.Body>
         <Link to={`/product/${product.slug}`}>
-          <Card.Title className="fc">{product.name}</Card.Title>
+          <Card.Title>{product.name}</Card.Title>
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
         <Card.Text>${product.price}</Card.Text>
@@ -51,5 +51,5 @@ const Product = (props) => {
       </Card.Body>
     </Card>
   );
-};
+}
 export default Product;
